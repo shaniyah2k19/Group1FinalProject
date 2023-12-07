@@ -1,3 +1,13 @@
-.quote {
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.test {
+    display: flex;
     background-color: gray;
+    padding: 10px;
+}
+
+.test > div {
+    background-color: aqua;
 }
