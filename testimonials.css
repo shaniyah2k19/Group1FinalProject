@@ -4,10 +4,14 @@ body {
 
 .test {
     display: flex;
-    background-color: gray;
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
 }
 
 .test > div {
     background-color: aqua;
+    margin: 10px 20px 10px 5px;
+    width: 300px;
+    padding: 15px;
 }
