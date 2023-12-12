@@ -25,9 +25,30 @@ li a{
     text-align: center;
     padding:14px 16px;
     text-decoration: none; 
-       color: black;
+    color: black;
 }
-ul {
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+}
+nav ul {
     list-style-type: none;
-
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 15px 70px;
+    color: rgb(29, 28, 27);
+    text-decoration: none;
+    background-color: rgb(134, 199, 240);
+}
+nav ul li a:hover{
+    background-color: rgb(192, 189, 213);
 }
