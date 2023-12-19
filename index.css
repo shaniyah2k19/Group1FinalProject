@@ -1,4 +1,37 @@
 body {
-    color: blue;
-    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 50px;
+} 
+
+.test {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1000px;  
 }
+
+.logo {
+    display: block;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.test > div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(173, 222, 250);
+    width: 1fr;
+    padding: 15px;
+}
+
+.subheader {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1fr;
+    text-align:center;
+}
+
