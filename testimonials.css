@@ -51,12 +51,12 @@ h1 {
     float: left;
     color: black;
     text-align: center;
-    padding: 8px 20px 8px 20px;
+    padding: 8px 15px 8px 15px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
     border-radius: 2px;
-    margin-top: 12px;
+    margin-top: 15px;
 }
   
 /* media query for responsiveness */
