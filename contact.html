@@ -21,7 +21,7 @@
       <a href="vendorinfo.html">About</a>
       <a href="contact.html">Contact Us</a>
     </div>
-  </div> 
+</div> 
 <!-- End Of Nav Bar Section -->
 <br>
 <br>
@@ -42,7 +42,7 @@
 </div><!--Ending div tag for content-->
 <div class="form">
 <h2>Contact Form</h2>
-<form method="GET" name="Input Form" enctype="multipart/form-data">
+<form method="GET" name="Input Form" enctype="multipart/form-data" onsubmit="submitForm();">
     <label for="firstname">FirstName:</label>
     <input type="text" id="name" name="name" placeholder="First Name" required>
     <br>
@@ -315,12 +315,11 @@
     </select>
     <br>
     <br>
-    
     <label for="subject">Postal Code:</label>
     <input type="tel" id="tel" name="tel" placeholder="Postal Code" required>
     <br>
     <br>
-    <label for="subject">Details Requesting More About:</label>
+    <label for="subject">Requesting More About:</label>
     <input type="checkbox" id="option1" name="option1" value="option">
     <label for="option1">Products</label>
     <input type="checkbox" id="option2" name="option2" value="option">
@@ -329,7 +328,6 @@
     <label for="option3">Ice Vending Machines</label>
     <input type="checkbox" id="option4" name="option4" value="option">
     <label for="option4">Pricing</label>
-
     <br>
     <br>
     <label for="subject">How did you find out about us?</label>
@@ -343,17 +341,27 @@
     <br>
     <br>
     <label for="subject">Inquiries or Remarks:</label>
-    <textarea id="message" name="message" rows="4" placeholder="Additional Concerns/Questions" required></textarea>
+    <textarea id="message" name="message" rows="4" placeholder="Additional Concerns/Questions"></textarea>
     <br>
     <br>
     <input type="submit" value="Submit">
     <input type="reset" value="Reset">
-    <!--PopUpMessage Once form submits
-    <p>We have successfully received your form and will get back to you within 3-4 working days.</p>
-    <p>"Making ice more user-friendly. Everywhere, at any moment."</p> -->
+    <!--JavaScript for Submit Button -->
+    <script>
+        function submitForm() {
+            alert("We have successfully🥳 received your form and will get back to you within 3-4 working days.\n" +
+            "Making ice more user-friendly. Everywhere, at any moment.🥶");
+            sendMail();
+        }
+        function sendMail() {
+            var link = "mailto:froststop2023@gmail.com"
+                    + "?subject=" + encodeURIComponent("FrostStop Contact Form submission")
+                    + "&body=" + encodeURIComponent(document.getElementById('message').value);
+            window.location.href = link;
+        }
+    </script>
 </form> 
 </div>
 </div>
-
 </body>
 </html>
