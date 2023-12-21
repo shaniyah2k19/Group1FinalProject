@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    text-align:center;
+
+}
+.container {
+    display:flex;
+}
+
+.container > div {
+    border:30px;
+    padding:30px;
+    margin:30px;
+    width:100%;
+    background-color: rgb(173 222 250);
+
+}
+span {
+    color:blue;
+}
+h3 {
+    text-align:center;
+}
+h2 {
+    text-align:center;
+}
+.cubes img {
+    max-width:100%;
+    margin-top:20px;
+    margin-bottom:30px;
+    height:300px;
+    margin-right:5px;
+    margin-left:20px;
+   
+    
+}
+.packs img {
+    max-width:100%;
+    margin-top:30px;
+    margin-bottom:20px;
+    
+}
+.sleeve img {
+    margin-top:30px;
+    margin-right:30px;
+    margin-left:70px;
+    
+}
+
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header a.active {
+    background-color:  rgb(173, 222, 250);
+    
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 8px 15px 8px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+  
+/* media query for responsiveness */
+@media screen and (max-width: 500px) {
+.header-right a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+.header-right {
+      float: none;
+    }
+body {
+        padding:25px;
+    }
+}
+
+  
