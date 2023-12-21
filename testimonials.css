@@ -23,8 +23,17 @@ body {
 h1 {
     clear: both;
     padding-top: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
 }
   
+h3 {
+    font-family: 'Merriweather', serif;
+}
+
 /* media query for responsiveness */
 @media screen and (max-width: 500px) {
 
