@@ -35,3 +35,11 @@ h2 {
 h3 {
     font-family: 'Merriweather', serif;
 }
+
+/* media query to center test divs on mobile view and adjust body margins */
+@media screen and (max-width: 600px) {
+    .test > div {
+        margin: auto;
+    }
+   
+}
