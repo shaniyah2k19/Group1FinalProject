@@ -4,9 +4,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    
 </head>
+
 <body>
 
+    <!-- HEADER -->
+<div>
+    <a href="index.html"><img src="images/froststop.png" alt="froststop logo" height="75px" class="logo"></a>
+    </div>
+     
+    <div class="header" id="myHeader">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Products</a>
+        <a href="locations.html">Locations</a>
+        <a class="active" href="testimonials.html">Testimonials</a>
+        <a href="vendorinfo.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    <!-- hamburger menu icon -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+     
+    <hr />
+     
+    <!-- JavaScript to toggle the "responsive" class on header when the user clicks on the icon -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myHeader");
+            if (x.className === "header") {
+              x.className += " responsive";
+            } else {
+              x.className = "header";
+            }
+        }
+    </script>
+     
+    <!-- END HEADER -->
 <div class="fruitp">
     <img src="https://i5.walmartimages.com/asr/d9768503-0970-48d1-a48f-219388e2805c_1.fed2ad4b943e906edea961233111bdc4.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF " alt="gatorade" width="150px" height="150px">
 <br>
