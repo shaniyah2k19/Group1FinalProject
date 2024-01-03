@@ -2,20 +2,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vending Machine Location</title>
+    <title>Vending Machine Locations</title>
     <link rel="stylesheet" href="location.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+
+    <!-- HEADER -->
+<div>
+    <a href="index.html"><img src="images/froststop.png" alt="froststop logo" height="75px" class="logo"></a>
+    </div>
+    
+    <div class="header" id="myHeader">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Products</a>
+        <a href="locations.html">Locations</a>
+        <a class="active" href="testimonials.html">Testimonials</a>
+        <a href="vendorinfo.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    <!-- hamburger menu icon -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div> 
+    
+    <hr />
+    
+    <!-- JavaScript to toggle the "responsive" class on header when the user clicks on the icon -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myHeader");
+            if (x.className === "header") {
+              x.className += " responsive";
+            } else {
+              x.className = "header";
+            }
+        } 
+    </script>
+    
+    <!-- END HEADER -->
 </head>
 <body>
 
- <div class="container">
-     <h1>Vending Machine Locations</h1>
+<h1>Vending Machine Locations</h1>    
+    <div>  
+        <iframe width="100%" height="300px" frameborder="3px" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/location-map_1003126?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"></iframe><p><a href="//umap.openstreetmap.fr/en/map/location-map_1003126?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">See full screen</a></p>
+    </div>    
 
-     <img src="images/Location/998286191702405884.png" alt="NYC Map">
-<!-- NYC Subway Stations -->
+    <!-- NYC Subway Stations -->
     <h2>NYC Subway Stations</h2>
+
+    <div  class="container">
+    
+
     <div class="location">
          <h3>Times Square-42nd Street</h3>
           <p>Address: 1475 Broadway, New York, NY 10036</p>
@@ -36,8 +76,13 @@
      <p>Address: 200 Broadway, New York, NY 10038</p>
 </div>
 
-<!-- Amtrak Stations -->
-    <h2>Amtrak Stations</h2>
+</div>
+
+  <!-- Amtrak Stations -->
+  <h2>Amtrak Stations</h2>
+
+<div  class="container">
+    
     <div class="location">
         <h3>34 St - Penn Station</h3>
         <p>Address: 33rd & 8th Ave, New York, NY 10001</p>
@@ -57,26 +102,27 @@
         <h3>Syracuse Regional Transportation Center</h3>
         <p>Address: 1 Walsh Circle, Syracuse, NY 13208</p>
      </div>
+    
+    </div>
 
-     <h2>Rest Area</h2>
+
+  <!-- Rest Areas -->
+  <h2>Rest Areas</h2>
+
+<div  class="container">
+     
     <div class="location">
-        <h3>Coming Soon</h3>
-        <p>Address: 33rd & 8th Ave, New York, NY 10001</p>
+        <h3 id="h3">Coming Soon</h3>
+       
      </div>
+
+      </div>
+
 </div>
  
   
-<!-- Navigation Bar -->
-<!-- <nav>
-    <ul>
-    <li><a href="contact.html">Contact</a></li> 
-    <li><a href="catalog.html">Catalog</a></li>
-    <li><a href="vendorinfo.html">Vendor Info</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
-    <li><a href="locations.html>">Locations</a></li>
-    <li><a href="index.html">Home</a></li>
-    </ul>
-</nav>  -->
+<!-- Web Page Footer  -->
+
 
 </body>
 </html>

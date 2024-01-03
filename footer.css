@@ -4,3 +4,66 @@ body {
     padding: 20px;
     margin: 0;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(122, 192, 233);
+    color: white;
+  }
+
+  .none {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+  }
+
+  .site-footer {
+    background-color: #283392;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+

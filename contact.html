@@ -2,42 +2,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
     <title>Ice Vending Machine Contact Information</title>
-    <!--Google Fonts Used-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="header.css">
+   <!---GOOGLE FONT--->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
+   <!---ICONS-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<!-- Nav Bar Section-->
-<div class="header">
-    <a href="index.html"><img src="images/froststop.png" alt="froststop logo" height="75px"></a>
-    <div class="header-right">
-      <a href="index.html">Home</a>
-      <a href="catalog.html">Products</a>
-      <a href="locations.html">Locations</a>
-      <a class="active" href="testimonials.html">Testimonials</a>
-      <a href="vendorinfo.html">About</a>
-      <a href="contact.html">Contact Us</a>
+
+<!-- HEADER -->
+<div>
+    <a href="index.html"><img src="images/froststop.png" alt="froststop logo" height="75px" class="logo"></a>
     </div>
-</div> 
-<!-- End Of Nav Bar Section -->
-<br>
-<br>
+    
+    <div class="header" id="myHeader">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Products</a>
+        <a href="locations.html">Locations</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="vendorinfo.html">About</a>
+        <a class="active" href="contact.html">Contact Us</a>
+    <!-- hamburger menu icon -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div> 
+    
+    <hr />
+    
+    <!-- JavaScript to toggle the "responsive" class on header when the user clicks on the icon -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myHeader");
+            if (x.className === "header") {
+              x.className += " responsive";
+            } else {
+              x.className = "header";
+            }
+        } 
+    </script>
+    
+    <!-- END HEADER -->
 <br>
 <br>
 <div class="section">
 <div class="content">
 <h1>Reach Out To Us Right Now!</h1>
-<p>Do you want to know more about<span style="color: blue;"> Portable Ice pack, our high-quality vending machines</span> ? We're here to assist! Contact us today using one of the methods listed below, and our team will be happy to assist you with all of your questions.</p>
-<p><span style="font-weight: bolder;">Phone: </span> From Monday to Friday, 8 a.m. to 5 p.m. EST, please call us at <span style="font-weight: bolder;">Phone:</span> (212) - 301 - 2931</p>
-<p><span style="font-weight: bolder;">Email: </span> Please contact us at <a href="mailto:froststop2023@gmail.com">froststop2023@gmail.com</a> at any time. We strive to respond to all inquiries as soon as possible.</p>
-<p><span style="font-weight: bolder;">Mailing Address:</span> If you prefer the classic method, send a letter to us at: </p>
-<p style="font-weight: bolder; color: blue;">Frost Stop</p>
+<p>Do you want to know more about<span style="color: (74, 150, 194)"> Portable Ice pack, our high-quality vending machines</span> ? We're here to assist! Contact us today using one of the methods listed below, and our team will be happy to assist you with all of your questions.</p>
+<p><span style="font-weight: bolder; color: rgb(74, 150, 194);">Phone: </span> From Monday to Friday, 8 a.m. to 5 p.m. EST, please call us at <span style="font-weight: bolder;">(212) - 301 - 2931</span> </p>
+<p><span style="font-weight: bolder; color: rgb(74, 150, 194);">Email: </span> Please contact us at <a href="mailto:froststop2023@gmail.com">froststop2023@gmail.com</a> at any time. We strive to respond to all inquiries as soon as possible.</p>
+<p><span style="font-weight: bolder; color: rgb(74, 150, 194);">Mailing Address:</span> If you prefer the classic method, send a letter to us at: </p>
+<p style="font-weight: bolder; color: rgb(74, 150, 194)">Frost Stop</p>
 <p>290 5th Avenue</p>
 <p>Manhattan, New York 10003</p>
-<p><span style="font-weight: bolder;">Contact Form:</span> This form can also be used to provide your full name, email address, and message. We will respond as soon as possible.</p>
+<p><span style="font-weight: bolder; color: rgb(74, 150, 194);">Contact Form:</span> This form can also be used to provide your full name, email address, and message. We will respond as soon as possible.</p>
 <p> Please do not hesitate to contact us if you have any inquiries, issues, or feedback. We'll be waiting to hear from you.</p>
 </div><!--Ending div tag for content-->
 <div class="form">
@@ -349,7 +372,7 @@
     <!--JavaScript for Submit Button -->
     <script>
         function submitForm() {
-            alert("We have successfully🥳 received your form and will get back to you within 3-4 working days.\n" +
+            alert("Thank you for your submission! We will get back to you within 2-5 business days.\n" +
             "Making ice more user-friendly. Everywhere, at any moment.🥶");
             sendMail();
         }

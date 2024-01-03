@@ -9,23 +9,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
+    <!---ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
 <!-- HEADER -->
+<div>
+<a href="index.html"><img src="images/froststop.png" alt="froststop logo" height="75px" class="logo"></a>
+</div>
 
-<div class="header">
-    <a href="index.html"><img src="images/froststop.png" alt="froststop logo" height="75px"></a>
-    <div class="header-right">
-      <a href="index.html">Home</a>
-      <a href="catalog.html">Products</a>
-      <a href="locations.html">Locations</a>
-      <a class="active" href="testimonials.html">Testimonials</a>
-      <a href="vendorinfo.html">About</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-  </div> 
+<div class="header" id="myHeader">
+    <a href="index.html">Home</a>
+    <a href="catalog.html">Products</a>
+    <a href="locations.html">Locations</a>
+    <a class="active" href="testimonials.html">Testimonials</a>
+    <a href="vendorinfo.html">About</a>
+    <a href="contact.html">Contact Us</a>
+<!-- hamburger menu icon -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div> 
+
+<hr />
+
+<!-- JavaScript to toggle the "responsive" class on header when the user clicks on the icon -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myHeader");
+        if (x.className === "header") {
+          x.className += " responsive";
+        } else {
+          x.className = "header";
+        }
+    } 
+</script>
 
 <!-- END HEADER -->
 
@@ -80,7 +104,7 @@
 </div>
 
 <h2>Find A Location</h2>
-<p>Find a vending machine location near you so you can cool down on the fly!</p>
+<p>Find a <a href="/locations.html">vending machine location near you</a> so you can cool down on the fly!</p>
     
 </body>
 </html>
