@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: rgb(13,55,107);
+    color: rgb(18 78 150);
     font-size: 18px;
     margin-top: 50px;
     margin-left: 50px;
@@ -24,6 +24,7 @@ h1 {
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 .test > div {
