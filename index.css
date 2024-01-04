@@ -1,9 +1,16 @@
 body {
     font-family: 'Roboto', sans-serif;
+    color: rgb(13,55,107);
     font-size: 18px;
     margin-top: 50px;
     margin-left: 50px;
 } 
+
+h1 {
+    clear: both;
+    padding-top: 15px;
+    font-family: 'Merriweather', serif;
+}
 
 .test {
     display: grid;
