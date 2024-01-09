@@ -2,20 +2,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vending Machine Location</title>
-    <link rel="stylesheet" href="location.css">
+    <title>Vending Machine Locations</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="location.css">
+    <link rel="stylesheet" href="footer2.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 <body>
 
- <div class="container">
-     <h1>Vending Machine Locations</h1>
+        <!-- HEADER -->
+<div>
+    <a href="index.html"><img src="images/froststop.png" alt="froststop logo" height="75px" class="logo"></a>
+    </div>
+    
+    <div class="header" id="myHeader">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Products</a>
+        <a class="active" href="locations.html">Locations</a>
+        <a  href="testimonials.html">Testimonials</a>
+        <a href="vendorinfo.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    <!-- hamburger menu icon -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div> 
+    
+    <hr />
+    
+    <!-- JavaScript to toggle the "responsive" class on header when the user clicks on the icon -->
+   <script>
+        function myFunction() {
+            var x = document.getElementById("myHeader");
+            if (x.className === "header") {
+              x.className += " responsive";
+            } else {
+              x.className = "header";
+            }
+        } 
+    </script>
+    
+    <!-- Open Street Custom Map -->
 
-     <img src="images/Location/998286191702405884.png" alt="NYC Map">
-<!-- NYC Subway Stations -->
+<h1>Vending Machine Locations</h1>    
+    <div class="center">  
+        <iframe width="100%" height="300px" frameborder="0" allowfullscreen allow="geolocation" style="border: none" src="//umap.openstreetmap.fr/en/map/location-map_1003126?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"></iframe><p><a href="//umap.openstreetmap.fr/en/map/location-map_1003126?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">See full screen</a></p>
+    </div>  
+
+    <!-- NYC Subway Station Adressess -->
     <h2>NYC Subway Stations</h2>
+
+    <div  class="container">
+    
+
     <div class="location">
          <h3>Times Square-42nd Street</h3>
           <p>Address: 1475 Broadway, New York, NY 10036</p>
@@ -36,8 +82,13 @@
      <p>Address: 200 Broadway, New York, NY 10038</p>
 </div>
 
-<!-- Amtrak Stations -->
-    <h2>Amtrak Stations</h2>
+</div>
+
+  <!-- Amtrak Station Addressess -->
+  <h2>Amtrak Stations</h2>
+
+<div  class="container">
+    
     <div class="location">
         <h3>34 St - Penn Station</h3>
         <p>Address: 33rd & 8th Ave, New York, NY 10001</p>
@@ -57,26 +108,70 @@
         <h3>Syracuse Regional Transportation Center</h3>
         <p>Address: 1 Walsh Circle, Syracuse, NY 13208</p>
      </div>
+    
+    </div>
 
-     <h2>Rest Area</h2>
+
+  <!-- Rest Areas -->
+  <h2>Rest Areas</h2>
+
+<div  class="container">
+     
     <div class="location">
-        <h3>Coming Soon</h3>
-        <p>Address: 33rd & 8th Ave, New York, NY 10001</p>
+        <h3 id="h3">Coming Soon</h3>
+       
      </div>
+
+      </div>
+
 </div>
  
+<br><br><br><br>
   
-<!-- Navigation Bar -->
-<!-- <nav>
-    <ul>
-    <li><a href="contact.html">Contact</a></li> 
-    <li><a href="catalog.html">Catalog</a></li>
-    <li><a href="vendorinfo.html">Vendor Info</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
-    <li><a href="locations.html>">Locations</a></li>
-    <li><a href="index.html">Home</a></li>
-    </ul>
-</nav>  -->
+<!-- Web Page Footer  -->
+<footer class="footer">
+    <div class="box">
+        <div class="logo">
+            <img src="images/froststop - transparent - 671x133.png" alt="FrostStop Logo" height="50px">
+        </div>
+      
+        <div class="nav-links">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Products</a></li>
+                <li> <a class="active" href="locations.html">Locations</a></li>
+                <li><a  href="testimonials.html">Testimonials</a></li>
+                <li><a href="vendorinfo.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a>
+                </li>   
+            </ul>
+        </div>  
+            
+        <div class="col3">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                        </a></li>
+                <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                        </a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                        </a></li>
+                <li><a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                        </a></li>
+            </ul>
+        </div>
+   
+        
+    </div>   
+    <div class="footer-copyright">
+        <p> Copyright &copy; 2024 FrostStop. All rights reserved.</p>
+    </div>
+   
+
+</footer>
 
 </body>
 </html>
