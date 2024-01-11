@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-size:17px;
 }
 p {
     text-align:center;
@@ -22,9 +23,11 @@ span {
 }
 h3 {
     text-align:center;
+    font-family: 'Merriweather', serif;
 }
 h2 {
     text-align:center;
+    font-family: 'Merriweather', serif;
 }
 .cubes img {
     max-width:100%;
