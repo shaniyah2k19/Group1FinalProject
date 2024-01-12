@@ -49,9 +49,6 @@ h2 {
     color: rgba(9,49,117);
 }
 
-@media only screen and (width >768px) {
-    .location > div {
-        margin: 100%;
-    }
-    }
+
+
     
