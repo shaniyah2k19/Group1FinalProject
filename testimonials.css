@@ -37,6 +37,11 @@ h3 {
     font-family: 'Merriweather', serif;
 }
 
+p > a {
+    color: rgba(9,49,117);
+    text-decoration: underline;
+}
+
 /* media query to center test divs on mobile view and adjust body margins */
 @media screen and (max-width: 600px) {
     .test > div {
