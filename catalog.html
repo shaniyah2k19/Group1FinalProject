@@ -4,50 +4,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    
 </head>
+
 <body>
 
-<div class="fruitp">
-    <img src="https://i5.walmartimages.com/asr/d9768503-0970-48d1-a48f-219388e2805c_1.fed2ad4b943e906edea961233111bdc4.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF " alt="gatorade" width="150px" height="150px">
+    <!-- HEADER -->
+<div>
+    <a href="index.html"><img src="images/froststop.png" alt="froststop logo" height="75px" class="logo"></a>
+    </div>
+     
+    <div class="header" id="myHeader">
+        <a href="index.html">Home</a>
+        <a class="active" href="catalog.html">Products</a>
+        <a href="locations.html">Locations</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="vendorinfo.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    <!-- hamburger menu icon -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+     
+    <hr />
+     
+    <!-- JavaScript to toggle the "responsive" class on header when the user clicks on the icon -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myHeader");
+            if (x.className === "header") {
+              x.className += " responsive";
+            } else {
+              x.className = "header";
+            }
+        }
+    </script>
+     
+    <!-- END HEADER -->
+
+
+
+    <div class="products">
+<div class="ice1">
+    <img src="images/icecube2.webp" alt="icecube2" width="250px" height="150px">
 <br>
-<h2>Fruit punch $2.99</h2>
+<h2>Icecube $1.99</h2>
 </div>
 <br>
-<div class="water">
-    <img src="https://i5.walmartimages.com/asr/83568193-2418-40f0-8367-4fd80481e2f8_1.fc5284020d9e9b9bcd45d777a9e62bb5.jpeg" alt="water" width="150px" height="150px">
+<div class="ice2">
+    <img src="images/icepack3.jpg" height="150px" width="250px">
 <br>
-<h2>Water $1.99</h2>
+<h2>Icepack Special $3.99</h2>
 </div>
 <br>
-<div class="drpepper">
-    <img src="https://i5.peapod.com/c/LS/LSKE9.jpg" alt="dr pepper" width="150px" height="150px">
+<div class="ipack3">
+    <img src="images/icepack4.jpg" height="150px" width="250px">
+    <br>
+<h2>Icepack $2.99</h2>
 
-<h2>Dr pepper $2.59</h2></div>
-<br>
-<div class="pepsi">
-    <img src="https://storage.googleapis.com/images-kkg-prd-dbdfdde.kkg.prd.v8.commerce.mi9cloud.com/product-images/detail/d5a6c122-0a05-4a25-8da2-96e9f3701e2f.jpeg" alt="pepsi" width="150px"height=150px>
-<h2>Pepsi $2.59</h2></div>
-<br>
-<div class="mntdew">
-    <img src=" https://megakfood.com/cdn/shop/products/Mountain-Dew.jpg?v=1664265266" alt="Mnt-Dew" width="150px"height=150px>
-<h2>Mountain-Dew $2.99</h2></div>
-<br>
-<div class="lemonade">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/3157l+a64CL._AC_UL600_SR600,600_.jpg" alt="lemonade" width="150px" height="150px">
-<br>
-<h2>Lemonade $2.79</h2></div>
-<br>
-<div class="redbull">
-    <img src="https://www.sodapoponline.com/cdn/shop/products/redbull12.JPG?v=1571276510" alt="Red Bull" width="150px" height="150px">
-<br>
-<h2>Red Bull $3.19</h2></div>
-<br>
-<div class="gingerale">
-    <img src="https://target.scene7.com/is/image/Target/GUEST_676dc6c6-4562-44a6-a90b-7e63a3720269?wid=488&hei=488&fmt=pjpeg" alt="ginger-ale" width="150px" height="150px">
-<br>
-<h2>Ginger-Ale $2.59</h2></div>
-<br>
+</div>    
 
+<!--  Page Footer  -->
+<div class="tunnel">
+    <footer class="footer">
+        <div class="box">
     
+            <div class="footerlogo">
+                <img src="images/froststop - transparent - 671x133.png" alt="FrostStop Logo" height="30px">
+            </div>
+    
+            <div class="socialicons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+    
+            <div class="menuicons">
+                <nav>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Products</a></li>
+                    <li><a class="active" href="locations.html">Location</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="vendorinfo.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </nav>     
+            </div>
+    
+            <div class="copyright">
+                <p> &copy; 2024 all right reserved.</p>
+            </div>
+        </div>   
+    </div>
+    
+    </footer>
+    
+    <!-- End Page Footer  -->
 </body>
 </html>
