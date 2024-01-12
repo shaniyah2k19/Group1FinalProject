@@ -1,9 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: rgb(18 78 150);
+    color: rgb(9 49 117);
     font-size: 18px;
     margin-top: 50px;
     margin-left: 50px;
+    background-color: rgb (255 255 255);
 } 
 
 h1 {
@@ -20,7 +21,8 @@ h1 {
 }
 
 .logo {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +33,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(173, 222, 250);
+    background-color: rgb(172,202,250);
     width: 1fr;
     padding: 15px;
 }
