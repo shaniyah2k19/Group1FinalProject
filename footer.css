@@ -73,19 +73,44 @@
     margin: 50px;
 }
 
-      @media only screen and (max-width: 768px) {
-            .menuicons, .socialicons, .footerlogo {
-                flex-direction: column;
-                align-items: center;
-                margin: 10px 0; /* Example margin adjustment */
-            }
-        
-            .box, nav {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-        
-            .footer {
-                padding: 20px; /* Smaller padding for smaller screens */
-            }
+
+
+/* Additional responsive adjustments as needed */
+
+@media only screen and (max-width: 600px) {
+      .footer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 20px; 
       }
+  
+      .box, .footerlogo {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px; /
+      }
+  
+      nav {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 10px; /
+      }
+  
+      .menuicons {
+          width: 100%; 
+          margin: 10px 0;
+      }
+
+      .copyright {
+            width: 55%;
+      }
+  }
+  
+  
